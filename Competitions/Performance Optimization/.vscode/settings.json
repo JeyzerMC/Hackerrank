@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        ".cfm": "html",
+        "bitset": "cpp",
+        "chrono": "cpp"
+    }
+}
