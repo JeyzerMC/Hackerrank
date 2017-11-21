@@ -1,5 +1,5 @@
 def nbTriplets(n, arr):
-    arr, nbOcc = sorted(arr), 0
+    arr, nbOcc, nbCal = sorted(arr), 0, 0
     for i in range(len(arr)):
         if arr[i] > n:
             break
@@ -10,9 +10,8 @@ def nbTriplets(n, arr):
                 if arr[i] + arr[j] + arr[k] > n:
                     break
                 nbOcc += 1
+                nbCal += 1
     return nbOcc
-
-
 n = int(input())
 arr = list(map(int, input().split(' ')))
 print(nbTriplets(n, arr))
